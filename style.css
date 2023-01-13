@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+}
+
+header {
+  background-color: black;
+}
+
+.container {
+  width: 1120px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  color: rgb(8, 150, 216);
+  text-shadow: 0 0 5px white;
+}
+
+.navbar button {
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(8, 150, 216);
+  cursor: pointer;
+  box-shadow: 0 0 5px blue;
+}
+
+.banner {
+  background: url("https://vsthemes.org/uploads/posts/2021-09/1632784059_1167804.webp") center / cover;
+  width: 100%;
+  height: 70vh;
+}
+
+.filters {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.filters select {
+  height: 50px;
+  width: 300px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+}
+
+.filters input {
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 0 10px white;
+  width: 90%;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  row-gap: 20px;
+}
+
+.card {
+  width: 30%;
+  height: auto;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+  padding: 10px;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-body div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-footer button{
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 20px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 0 10px blue;
+  background-color: rgb(70, 234, 240);
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.nameColor {
+  box-shadow: 0 0 10px blue !important;
+}
+
+.clanColor {
+  box-shadow: 0 0 10px green !important;
+}
+
+.levelColor {
+  box-shadow: 0 0 10px pink !important;
+}
+
+aside {
+  width: 25%;
+  background: white;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  box-shadow: 0 0 5px gray;
+  text-align: center;
+  left: -25%;
+  transition: .5s;
+}
+
+.sidebar.active {
+  left: 0;
+ }
+
+aside .bars div {
+  width: 30px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: rgb(8, 150, 216);
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
+}
+
+aside .bars {
+  cursor: pointer;
+  position: absolute;
+  right: -15%;
+  top: 3%;
+  transition: .5s;
+}
+
+.activeBars {
+  right: 4% !important;
+  transform: rotate(180deg);
+}
+
+aside form {
+  padding: 0 20px;
+  text-align: center;
+}
+
+aside form input {
+  width: 90%;
+  padding: 10px 3px;
+  margin-bottom: 10px;
+}
+
+aside form button {
+  width: 90%;
+  padding: 10px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: rgb(70, 234, 240);
+  color: black;
+  box-shadow: 0 0 10px blue;
+}
+
